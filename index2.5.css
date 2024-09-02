@@ -1,0 +1,400 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .login-btn, .auth-buttons .signup-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.auth-buttons .login-btn {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+}
+h1{
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4{
+    font-size: 20px;
+}
+.imagg{
+    position: relative;
+    width: 96%;
+    height: 450px;
+    align-items: center;
+    left: 1rem;
+    border-radius: 8px;
+}
+.hero {
+    background-color: #e0f7fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.hero-course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10rem;
+    gap: 20px;
+}
+
+.course-details {
+    max-width: 300px;
+    text-align: left;
+}
+
+.new-badge {
+    background-color: #00bfa5;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.course-details h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-details p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.course-progress {
+    margin: 10px 0;
+    color: #777;
+}
+
+.start-course-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-course {
+        flex-direction: column;
+    }
+
+    .course-image img {
+        max-width: 100%;
+    }
+}
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.courses, .certifications {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.course, .certification {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.course img, .certification img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    color: gray;
+}
+footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #0073e6;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: #fff;
+        padding: 10px 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-toggle.active + nav ul {
+        display: flex;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .auth-buttons a {
+        padding: 8px 15px;
+    }
+}
+.certifications-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.certifications-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.certifications-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-card {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certification-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.certification-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certification-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
